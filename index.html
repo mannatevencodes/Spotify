@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+</head>
+<body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+
+
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+              <div class="nav-option">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                <a href="index.html" class="home" style="opacity: 1;">Home</a>
+              </div>
+              <div class="nav-option">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+              </div>
+            </div>
+            
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./images/library_icon.png" alt="">
+                        <a href="#" class="home">Library</a>
+                        
+                    </div>
+                    <div class="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                    </div>   
+                </div>
+                
+                <div class="lib-box1">
+                    <div class="box nav">
+                        <div class="box1">Create your first playlist</div>
+                        <div class="box2">It's easy, we'll help you</div>
+                        <button class="button">Create playlist</button>
+                    </div>
+                </div>
+
+                <div class="lib-box2">
+                    <div class="box nav">
+                        <div class="box1">Let's find some podcasts to follow</div>
+                        <div class="box2">We'll keep you updated on new episodes</div>
+                        <button class="button">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-left">
+                <button class="nav-left" ><img src="images/backward_icon.png" alt=""></button>
+                <button class="nav-left hide" ><img src="images/forward_icon.png" alt=""></button>
+                </div>
+                <div class="sticky-nav-right">
+                <button class="button nav-right-margin hide">Explore Premium</button>
+                <button class="button download nav-right-margin" id="install"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i> Install App</button>
+                <button class="button user-icon nav-right-margin"><i class="fa-regular fa-user" ></i></button>
+                </div>    
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card13img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Daku</p>
+                    <p class="card-info">Chani Nattan, Inderpal Moga</p>
+                </div>
+            </div>
+
+            
+
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card2img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card7img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card12img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card3img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card4img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div> 
+                </div>
+                
+                
+                <h2>Spotify original and exclusive shows</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card8img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card9img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card10img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                </div>
+            
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card5img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card6img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="images/card1img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+        </div>
+
+        <br><br>
+        <div class="links">
+            <div class="about">
+                <ul>
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the Record</a>
+                </ul>
+                <ul>
+                    <h4>Communities</h4>
+                    <a href="#">For Artists</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Investors</a>
+                    <a href="#">Vendors</a>
+                </ul>
+                <ul>
+                    <h4>Useful links</h4>
+                    <a href="#">Support</a>
+                    <a href="#">Free Mobile App</a>
+                </ul>
+            </div>
+            <div class="social-media">
+                <button class="social-icons"><i class="fa-brands fa-instagram"></i></button>
+                <button class="social-icons"><i class="fa-brands fa-twitter"></i></button>
+                <button class="social-icons"><i class="fa-brands fa-facebook"></i></button>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <br><br><br><br><br><br>
+        </div>
+
+        <div class="music-player">
+            <div class="music-player-left">
+                <div class="song-img"></div>
+                <div class="song-name">
+                    <h4>Daku</h4>
+                    <p>Chani Nattan, Inderpal Moga</p>
+                </div>
+                <div class="song-icons icons">
+                    <i class="fa-regular fa-heart" id="heart"></i>
+                    <i class="fa-solid fa-images"></i>
+                </div>
+        
+            </div>
+            <div class="music-player-center"> 
+                <div class="player-icons">
+                    <img src="images/player_icon1.png" alt="" class="playback-icons">
+                    <img src="images/player_icon2.png" alt="" class="playback-icons">
+                    <i id="play" class="fa-solid fa-circle-play" style="color: #ffffff;"></i>
+                    <img src="images/player_icon4.png" alt="" class="playback-icons">
+                    <img src="images/player_icon5.png" alt="" class="playback-icons">
+                </div>
+                <div class="playback-slider">
+                    <span id="timeStamp0">00:00</span>
+                    <input type="range" name="" id="duration" min="0" max="100" value="0">
+                    <span id="timeStamp1">2:14</span>
+                </div>
+            </div>
+
+
+            <div class="music-player-right icons">
+                <i class="fa-brands fa-itunes-note"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-computer"></i>
+                <div class="volume-slider">
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" name="volume" id="volume" min="0" max="100" value="100">
+                </div>
+                
+            </div>
+        </div>
+    
+
+        <script src="app.js"></script>
+</body>
+</html>
